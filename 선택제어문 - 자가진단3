@@ -18,6 +18,5 @@ public class main {
 		} else {
 			System.out.println(years + " years later");
 		}
-
 	}
 }
