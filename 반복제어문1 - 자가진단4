@@ -11,6 +11,7 @@ public class main {
 		int value = 0;
 		float sum = 0;
 		int count = 0;
+		
 		while (true) {
 			Scanner scan = new Scanner(System.in);
 			value = scan.nextInt();
