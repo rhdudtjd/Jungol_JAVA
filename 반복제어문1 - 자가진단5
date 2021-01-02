@@ -9,11 +9,13 @@ import java.util.Scanner;
 
 public class main {
 	public static void main(String[] args) {
+	
 		int value = 0;
 
 		while (true) {
 			Scanner scan = new Scanner(System.in);
 			value = scan.nextInt();
+			
 			if (value % 3 == 0) {
 				System.out.println(value / 3);
 			} else if (value == -1) {
