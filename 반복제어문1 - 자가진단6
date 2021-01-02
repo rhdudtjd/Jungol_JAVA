@@ -14,8 +14,10 @@ import java.util.Scanner;
 
 public class main {
 	public static void main(String[] args) {
+	
 		int integer = 0;
 		boolean b = true;
+		
 		while (b) {
 			System.out.print("1. Korea\n" + "2. USA\n" + "3. Japan\n" + "4. China\n" + "number? ");
 			Scanner scan = new Scanner(System.in);
