@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class main {
 	public static void main(String[] args) {
+	
 		int value = 0;
 		float sum = 0;
 		int count = 0;
@@ -17,6 +18,7 @@ public class main {
 			value = scan.nextInt();
 			sum += value;
 			count++;
+			
 			if (value >= 100) {
 				break;
 			}
