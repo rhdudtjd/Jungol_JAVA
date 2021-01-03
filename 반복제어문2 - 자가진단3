@@ -1,0 +1,24 @@
+하나의 정수를 입력받아 1부터 입력받은 정수까지의 짝수를 차례대로 출력하는 프로그램을 작성하시오.
+
+입력되는 정수는 50이하이다.
+
+
+package jungol_project;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int integer = scan.nextInt();
+
+		if (integer > 50) {
+			System.out.println("50이하로 입력하십시오.");
+		} else {
+			for (int i = 2; i < integer + 1; i += 2) {
+				System.out.print(i + "\s");
+			}
+		}
+	}
+}
