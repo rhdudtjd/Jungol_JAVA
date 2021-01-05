@@ -1,0 +1,27 @@
+100 이하의 두 개의 정수를 입력받아 작은 수부터 큰 수까지 차례대로 출력하는 프로그램을 작성하시오.
+
+
+package jungol;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int integer_1 = scan.nextInt();
+		int integer_2 = scan.nextInt();
+
+		if (integer_1 > integer_2) {
+			for (int i = integer_2; i <= integer_1; i++) {
+				System.out.print(i + "\s");
+			}
+		} else if (integer_2 > integer_1) {
+			for (int i = integer_1; i <= integer_2; i++) {
+				System.out.print(i + "\s");
+			}
+		} else {
+			System.out.println(integer_1);
+		}
+	}
+}
