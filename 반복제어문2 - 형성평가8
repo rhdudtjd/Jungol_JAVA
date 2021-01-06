@@ -1,0 +1,25 @@
+행과 열의 수를 입력받아 다음과 같이 출력하는 프로그램을 작성하시오.
+
+
+package jungol;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int row = scan.nextInt();
+		int column = scan.nextInt();
+		int count = 1;
+
+		for (int i = 1; i <= row; i++) {
+			for (int j = i; count <= column; j += i) {
+				System.out.print(j + "\s");
+				count++;
+			}
+			System.out.println();
+			count = 1;
+		}
+	}
+}
