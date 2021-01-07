@@ -1,0 +1,21 @@
+자연수 n을 입력받아서 n줄만큼 다음과 같이 출력하는 프로그램을 작성하시오.
+
+
+package fast;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int line = scan.nextInt();
+
+		for (int i = 1; i <= line; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
