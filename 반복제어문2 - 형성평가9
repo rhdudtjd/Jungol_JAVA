@@ -1,0 +1,26 @@
+정수를 입력받아 다음과 같이 순서쌍을 출력하는 프로그램을 작성하시오.
+
+(1, 1) (1, 2) (1, 3) (1, 4)
+(2, 1) (2, 2) (2, 3) (2, 4)
+(3, 1) (3, 2) (3, 3) (3, 4)
+(4, 1) (4, 2) (4, 3) (4, 4)
+
+
+package jungol_project;
+
+import java.util.Scanner;
+
+public class main_2 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int integer = scan.nextInt();
+		
+		for (int i = 1; i <= integer; i++) {
+			for (int j = 1; j <= integer; j++) {
+				System.out.print("(" + i + ", " + j + ") ");
+			}
+			System.out.println();
+		}
+	}
+}
